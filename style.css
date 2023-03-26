@@ -213,7 +213,7 @@ header {
   max-width: 100%;
   height: 340px;
   position: relative;
-  background: url(./images/cat_footer.png) no-repeat 50%;
+  background: url(./images/cat_footer.png) no-repeat 50% 50% / contain;
 }
 
 .section3 > img {
@@ -236,8 +236,6 @@ header {
   justify-content: space-between;
   align-items: center;
   transform: translateY(-50%);
-}
-.sub-contents {
 }
 
 .sub-title {
