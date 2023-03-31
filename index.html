@@ -16,8 +16,14 @@
                 <img src="./images/logo.svg" alt="HODU">
             </a>
         </h1>
-        <nav class="navbar">
+        <nav id="navbar">
+
             <ul class="nav-list">
+                <li>
+                    <button class="arrow-menu" type="button" id="close-menu">
+                        <img src="./images/arrow-right.svg" alt="" class="arrow">
+                    </button>
+                </li>
                 <li>
                     <a href="#">
                         Home
@@ -29,11 +35,18 @@
                 <li><a href="#">
                         Support
                     </a></li>
+                <li>
+                    <button class="btn-common">
+                        Download
+                    </button>
+                </li>
             </ul>
-            <button class="btn-common">
-                Download
-            </button>
         </nav>
+        <div class="menu">
+            <button class="menu-icon" type="button" id="open-menu">
+                <img src="./images/menu.svg" alt="">
+            </button>
+        </div>
     </header>
     <main>
         <div class="section1">
@@ -49,7 +62,9 @@
                         ever since the 1500s, when an unknown</p>
                     <button class="btn-common">Download</button>
                 </section>
-                <img src="./images/cat_bg.png" alt="">
+                <div class="section1-img">
+                    <img src="./images/cat_bg.png" alt="">
+                </div>
             </div>
         </div>
         <div class="section2">
@@ -67,25 +82,27 @@
                         <h2 class="second-headings">dummy text of the printing and dummy</h2>
                         <p class="second-txt">
                             Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
                         </p>
                     </div>
                     <div class="second-contents">
                         <ul class="cat-slide">
                             <li>
-                                <img class="img-shadow"  src="./images/cat_slide1.png" alt="">
+                                <img class="img-shadow" src="./images/cat_slide1.png" alt="">
                             </li>
                             <li>
-                                <img class="img-shadow"  src="./images/cat_slide2.png" alt="">
+                                <img class="img-shadow" src="./images/cat_slide2.png" alt="">
                             </li>
                             <li>
-                                <img class="img-shadow"  src="./images/cat_slide3.png" alt="">
+                                <img class="img-shadow" src="./images/cat_slide3.png" alt="">
                             </li>
                         </ul>
                     </div>
                     <div class="learn-more">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
                             Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                         <h3 class="txt-hide">Learn more</h3>
@@ -112,35 +129,46 @@
         </div>
     </main>
     <footer>
-        <h2 class="txt-hide">footer-logo</h2>
-        <a href="#">
-            <img src="./images/logo.svg" alt="">
-        </a>
-        <div class="sns-container">
-            <ul class="sns-list">
-                <li>
-                    <a href="#">
-                        <img src="./images/icon-blog.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/icon-insta.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/icon-facebook.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/icon-youtube.svg" alt="">
-                    </a>
-                </li>
+        <div class="footer-sns">
+            <h2 class="txt-hide">footer-logo</h2>
+            <a class="footer-logo" href="#">
+                <img src="./images/logo.svg" alt="">
+            </a>
+            <div class="sns-container">
+                <ul class="sns-list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/icon-blog.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icon-insta.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icon-facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icon-youtube.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-about">
+            <ul class="about">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms of Use</a></li>
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
