@@ -233,6 +233,10 @@ header {
     background: url(./images/cat_footer.png) no-repeat 50% 50% / cover;
 }
 
+.section3 > .l_wrapper {
+    position: relative;
+}
+
 .section3 > img {
     object-fit: cover;
     height: 100%;
@@ -243,7 +247,10 @@ header {
     max-height: 348px;
     box-sizing: border-box;
     display: flex;
-    margin: 0 320px;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    right: 32px;
     padding: 50px 58px;
     background-color: #263140;
     border-radius: 30px;
