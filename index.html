@@ -17,10 +17,9 @@
             </a>
         </h1>
         <nav id="navbar">
-
             <ul class="nav-list">
                 <li>
-                    <button class="arrow-menu" type="button" id="close-menu">
+                    <button class="btn-close" type="button" id="close-menu">
                         <img src="./images/arrow-right.svg" alt="" class="arrow">
                     </button>
                 </li>
@@ -42,7 +41,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="menu">
+        <div class="btn-open">
             <button class="menu-icon" type="button" id="open-menu">
                 <img src="./images/menu.svg" alt="">
             </button>
@@ -123,7 +122,7 @@
                     <form class="input-email">
                         <input type="email" id="email" placeholder="Enter your e-mail address">
                         <label for="email"></label>
-                        <button type="button" class="btn-common">Subscribe</button>
+                        <button type="button" class="btn-common" id="btn-modal">Subscribe</button>
                     </form>
                 </article>
             </div>
@@ -170,6 +169,14 @@
             </ul>
         </div>
     </footer>
+    <div id="modal" class="modal-wrapper">
+        <div class="modal-window">
+            <img src="./images/modal-cat.png" alt="">
+            <h2 class="modal-title">Thank you!</h2>
+            <p class="modal-txt">Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <button type="button" class="btn-common" id="modal-close">OK! I Love HODU</button>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 

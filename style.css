@@ -60,13 +60,13 @@ button {
 /* // wrapper */
 
 .btn-common {
-    padding: 15px 0;
-    width: 140px;
+    padding: 15px 29px;
     color: #fff;
     background-color: #d97652;
     border-radius: 40px;
     font-weight: 700;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -105,11 +105,11 @@ header {
     margin-left: 40px;
 }
 
-.menu {
+.btn-open {
     display: none;
 }
 
-.arrow-menu {
+.btn-close {
     display: none;
 }
 
@@ -130,6 +130,10 @@ header {
 .section1-contents {
     display: flex;
     flex-direction: column;
+}
+
+.section1-contents .btn-common {
+    width: 140px;
 }
 
 .section1-title {
@@ -348,6 +352,47 @@ footer {
 
 /* // footer */
 
+/* modal */
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 0 10px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.modal-window {
+    width: 600px;
+    background-image: url(./images/modal-bg.png);
+    box-sizing: border-box;
+    padding: 60px 0 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #d97652;
+    margin: 24px 0 12px;
+    line-height: 45px;
+}
+
+.modal-txt {
+    font-size: 14px;
+    margin-bottom: 38px;
+    line-height: 18px;
+}
+
+/* // modal */
+
 /* 반응형 추가 예정 */
 @media (max-width: 1250px) {
     .subscribe {
@@ -456,14 +501,14 @@ footer {
         margin: 40px 0 0;
     }
 
-    .arrow-menu {
+    .btn-close {
         display: block;
         position: absolute;
         top: 22px;
         left: 20px;
     }
 
-    .menu {
+    .btn-open {
         display: block;
     }
 
