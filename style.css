@@ -343,7 +343,8 @@ footer {
 
 .footer-about {
     display: none;
-    flex-basis: 150px;
+    flex-basis: 200px;
+    white-space: nowrap;
 }
 
 .about {
