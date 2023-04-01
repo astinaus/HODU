@@ -453,6 +453,7 @@ footer {
 @media (max-width: 900px) {
     .second-contents {
         overflow-x: scroll;
+        margin-right: -32px;
     }
     .second-contents::-webkit-scrollbar {
         height: 5px;
