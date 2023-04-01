@@ -6,7 +6,7 @@ const closeModal = document.getElementById("modal-close");
 const modal = document.getElementById("modal");
 
 openMenu.addEventListener("click", () => {
-    navbar.style.display = "block";
+    navbar.style.display = "flex";
 });
 
 closeMenu.addEventListener("click", () => {

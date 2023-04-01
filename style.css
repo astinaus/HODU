@@ -83,6 +83,11 @@ header {
     padding: 31px 20px;
 }
 
+.logo {
+    font-size: 0;
+    /* 양래님 작품 */
+}
+
 .logo img {
     max-width: 130px;
 }
@@ -248,7 +253,6 @@ header {
 
 .subscribe {
     max-width: 1280px;
-    max-height: 348px;
     box-sizing: border-box;
     display: flex;
     position: absolute;
@@ -339,6 +343,7 @@ footer {
 
 .footer-about {
     display: none;
+    flex-basis: 110px;
 }
 
 .about {
@@ -369,12 +374,16 @@ footer {
 }
 
 .modal-window {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     background-image: url(./images/modal-bg.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
     box-sizing: border-box;
     padding: 60px 0 40px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 .modal-title {
@@ -411,7 +420,6 @@ footer {
     .section1 > .l_wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     .section1-title {
         text-align: center;
@@ -447,10 +455,7 @@ footer {
     .learn-more {
         margin-top: 5px;
         flex-direction: column;
-        gap: 0;
-    }
-    .learn-more > p {
-        margin-bottom: 30px;
+        gap: 30px;
     }
 
     .learn-more .btn-common {
@@ -475,6 +480,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 24px 20px;
+    }
+
     #navbar {
         display: none;
         color: #fff;
@@ -482,7 +491,7 @@ footer {
         right: 0;
         top: 0;
         z-index: 20;
-        animation: open 0.3s linear;
+        /* animation: open 0.3s linear; */
     }
     .nav-list {
         position: relative;
@@ -510,12 +519,13 @@ footer {
 
     .btn-open {
         display: block;
+        /* align-self: flex-start;  */
+        /* 민철님 작품 */
     }
 
     .section2-first {
         display: flex;
         gap: 40px;
-        align-items: center;
         margin: 40px 0 60px;
         flex-direction: column;
     }
@@ -526,32 +536,28 @@ footer {
     .first-txt > h2 {
         margin-bottom: 20px;
     }
-
     .subscribe {
-        flex-direction: column;
         padding: 36px 32px 30px 32px;
+        align-items: flex-start;
     }
     .sub-title {
         margin-bottom: 20px;
     }
-
     .sub-text {
         line-height: 18px;
     }
-
     .input-email {
         text-align: right;
+        width: 100%;
     }
-
     .input-email .btn-common {
-        width: 117px;
         position: static;
         transform: none;
-        padding: 11px auto;
+        padding: 11px 24px;
         margin-top: 20px;
     }
-
     #email {
+        min-width: 262px;
         width: 100%;
         height: 40px;
         border-radius: 60px;
@@ -560,8 +566,81 @@ footer {
         background: #fff url(./images/mail.svg) no-repeat 17.5px 13px;
         background-size: 15px;
         box-sizing: border-box;
-        min-width: 262px;
         font-size: 12px;
+    }
+
+    footer {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px 24px;
+    }
+
+    .sns-list {
+        display: flex;
+    }
+
+    .sns-list li:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .sns-list img {
+        width: 32px;
+    }
+
+    .footer-logo img {
+        width: 112px;
+    }
+
+    .footer-sns {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: flex-start;
+    }
+
+    .footer-about {
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .modal-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: inset 0 0 10px;
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 20;
+    }
+
+    .modal-window {
+        max-width: 400px;
+        width: 100%;
+        background: #f2e9d8 url(./images/modal-bg.png) no-repeat;
+        background-size: contain;
+        box-sizing: border-box;
+        padding: 40px 0 30px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-title {
+        font-size: 24px;
+        margin: 24px 0 10px;
+        line-height: 30px;
+    }
+
+    .modal-txt {
+        margin: 0 auto 28px;
+        width: 200px;
     }
 }
 
@@ -582,7 +661,7 @@ footer {
     }
 }
 
-@keyframes open {
+/* @keyframes open {
     0% {
         right: -400px;
     }
@@ -590,4 +669,4 @@ footer {
     100% {
         right: 0;
     }
-}
+} */
