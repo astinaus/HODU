@@ -160,12 +160,10 @@ header {
     max-width: 737px;
     font-size: 48px;
     margin-bottom: 40px;
-    white-space: pre-line;
 }
 
 .section1-txt {
     max-width: 439px;
-    white-space: pre-line;
     margin-bottom: 40px;
 }
 
@@ -206,7 +204,6 @@ header {
 
 .second-txt {
     margin: 40px auto 0;
-    white-space: pre-line;
 }
 
 .second-headings,
@@ -234,7 +231,6 @@ header {
 
 .learn-more > p {
     max-width: 739px;
-    white-space: pre-line;
 }
 
 .learn-more .btn-common {
